@@ -83,3 +83,7 @@ CONFIG_BT_CTRL_BLE_MAX_ACT=2
 CONFIG_ESP_WIFI_IRAM_OPT=n
 CONFIG_ESP_WIFI_RX_IRAM_OPT=n
 CONFIG_SPIRAM_TRY_ALLOCATE_WIFI_LWIP=y
+# 3 marks every HID characteristic as needing an authenticated, encrypted
+# link (the service checks == 3, one above the Kconfig help's numbering), so a
+# Mac pairs with a passkey instead of reading the keyboard unauthenticated.
+CONFIG_BT_NIMBLE_SM_LVL=3
