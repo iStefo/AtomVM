@@ -87,3 +87,5 @@ CONFIG_SPIRAM_TRY_ALLOCATE_WIFI_LWIP=y
 # link (the service checks == 3, one above the Kconfig help's numbering), so a
 # Mac pairs with a passkey instead of reading the keyboard unauthenticated.
 CONFIG_BT_NIMBLE_SM_LVL=3
+# The host hears battery level changes instead of polling for them.
+CONFIG_BT_NIMBLE_SVC_BAS_BATTERY_LEVEL_NOTIFY=y
